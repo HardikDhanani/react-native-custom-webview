@@ -69,7 +69,7 @@ class AddressBar extends BaseComponent {
                     onChange={this.handleTextInputChange}
                     clearButtonMode="while-editing"
                     autoCorrect={false}
-                    style={[styles.addressBarTextInput, this.props.foregroundColor && {color:this.props.foregroundColor}]}
+                    style={[styles.addressBarTextInput]}
                 />
             </View>
         );
