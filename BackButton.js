@@ -59,9 +59,7 @@ class BackButton extends BaseComponent {
         //   style={this.buttonStyle()}>
         // </Button>
         <TouchableHighlight onPress={this.onBackPress.bind(this)} style={styles.backButton} underlayColor='#ffffffff'>
-          <Text style={{color: '#fff'}}>
-            Done
-          </Text>
+          <Text style={{color: '#000'}}>Done</Text>
         </TouchableHighlight>
       );
     }
