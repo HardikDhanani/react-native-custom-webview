@@ -14,6 +14,8 @@ export default StyleSheet.create({
     },
 
     header: {
+        height: 45,
+        justifyContent: 'center',
         transform: [{'translate':[0,0,1]}], /* bring view to front */
         shadowColor:SHADOW_COLOR,
         shadowOpacity:SHADOW_OPACITY,
@@ -43,7 +45,6 @@ export default StyleSheet.create({
         height: 350,
     },
     addressBarTextInput: {
-        backgroundColor: BGWASH,
         borderColor: 'transparent',
         borderRadius: 3,
         borderWidth: 1,
@@ -78,16 +79,16 @@ export default StyleSheet.create({
     },
 
     toolBar: {
+        height: 45,
+        alignItems: 'center',
         shadowColor:SHADOW_COLOR,
         shadowOpacity:SHADOW_OPACITY,
         shadowRadius:SHADOW_RADIUS,
         shadowOffset: { height:0, width: 0 },
         flexDirection:'row',
         justifyContent:'space-around',
-        paddingTop:ELEMENT_MARGIN,
-        paddingBottom:ELEMENT_MARGIN
+        backgroundColor: '#000000'
     },
-
     toolBarIcons: {
         width:20,
         height:20,
