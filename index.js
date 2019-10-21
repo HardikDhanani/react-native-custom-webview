@@ -6,8 +6,8 @@ import React from 'react';
 
 import {
   View,
-  WebView,
 } from 'react-native';
+import WebView from 'react-native-webview'
 
 import BaseComponent from './BaseComponent'
 import Utils from './Utils'
