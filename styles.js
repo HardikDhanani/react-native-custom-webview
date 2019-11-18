@@ -16,11 +16,13 @@ export default StyleSheet.create({
     header: {
         height: 45,
         justifyContent: 'center',
-        transform: [{'translate':[0,0,1]}], /* bring view to front */
-        shadowColor:SHADOW_COLOR,
-        shadowOpacity:SHADOW_OPACITY,
-        shadowRadius:SHADOW_RADIUS,
-        shadowOffset: { height:1, width: 0 }
+        //transform: [{'translate':[0,0,1]}], /* bring view to front */
+        // shadowColor:SHADOW_COLOR,
+        // shadowOpacity:SHADOW_OPACITY,
+        // shadowRadius:SHADOW_RADIUS,
+        // shadowOffset: { height:1, width: 0 },
+        borderBottomWidth:0.6,
+        borderBottomColor:'#d7d7d7'
     },
     addressBarRow: {
         flex: 1,
@@ -31,14 +33,14 @@ export default StyleSheet.create({
         marginRight: ELEMENT_MARGIN + 7,
     },
     backButton: {
-      width: 40,
+      width: 50,
       height: 25,
       opacity: 0.9,
       marginTop: ELEMENT_MARGIN/2 + 2,
       marginLeft: ELEMENT_MARGIN + 7,
       borderColor: 'transparent',
       borderRadius: 3,
-      borderWidth: 1
+      borderWidth: 1,
     },
     webView: {
         backgroundColor: BGWASH,
@@ -49,9 +51,12 @@ export default StyleSheet.create({
         borderRadius: 3,
         borderWidth: 1,
         height: 24,
-        paddingLeft: 10,
+        //paddingLeft: 10,
         flex: 1,
         fontSize: 14,
+        textAlign:'center',
+        color: 'green',
+        fontWeight:'600'
     },
     navButton: {
         width: 20,
@@ -87,7 +92,7 @@ export default StyleSheet.create({
         shadowOffset: { height:0, width: 0 },
         flexDirection:'row',
         justifyContent:'space-around',
-        backgroundColor: '#000000'
+        backgroundColor: '#00000095'
     },
     toolBarIcons: {
         width:20,
